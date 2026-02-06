@@ -12,10 +12,10 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
             line-height: 1.8;
             color: #1a1a1a;
-            background-color: #f5f5f7;
+            background: #f5f5f7;
             padding: 20px;
         }
         
@@ -23,9 +23,9 @@
             max-width: 800px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
+            padding: 48px;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
@@ -37,58 +37,124 @@
         
         .update-date {
             font-size: 14px;
-            color: #666;
+            color: #8e8e93;
             margin-bottom: 32px;
         }
         
+        .intro {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            border-left: 3px solid #007AFF;
+        }
+        
+        .intro p {
+            margin: 0;
+            color: #3a3a3c;
+            font-size: 15px;
+        }
+        
         h2 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 600;
             color: #1a1a1a;
-            margin-top: 32px;
+            margin-top: 40px;
             margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e5ea;
         }
         
         p {
             font-size: 16px;
-            color: #333;
+            color: #3a3a3c;
             margin-bottom: 16px;
+            line-height: 1.6;
         }
         
         ul, ol {
             margin-left: 24px;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
         
         li {
             font-size: 16px;
-            color: #333;
-            margin-bottom: 8px;
+            color: #3a3a3c;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        li strong {
+            color: #1a1a1a;
+            font-weight: 600;
         }
         
         .highlight {
-            background: #fff3cd;
+            background: #fff9e6;
             padding: 16px;
-            border-radius: 8px;
-            border-left: 4px solid #ffc107;
-            margin: 24px 0;
+            border-radius: 6px;
+            border-left: 3px solid #ffcc00;
+            margin: 20px 0;
         }
         
-        .contact {
-            margin-top: 40px;
-            padding: 20px;
-            background: #f5f5f7;
-            border-radius: 8px;
+        .highlight p {
+            margin: 0;
+            color: #3a3a3c;
         }
         
-        .contact a {
-            color: #007AFF;
+        .contact-box {
+            background: #007AFF;
+            color: white;
+            padding: 32px;
+            border-radius: 12px;
+            margin-top: 48px;
+            text-align: center;
+        }
+        
+        .contact-box h2 {
+            color: white;
+            margin-top: 0;
+            border: none;
+            padding-bottom: 0;
+            margin-bottom: 16px;
+        }
+        
+        .contact-box p {
+            color: white;
+            margin-bottom: 12px;
+        }
+        
+        .contact-box a {
+            color: white;
             text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: background 0.2s ease;
+            margin-top: 8px;
+        }
+        
+        .contact-box a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 24px 20px;
+            color: #8e8e93;
+            font-size: 14px;
         }
         
         @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+            
             .container {
-                padding: 24px;
+                padding: 28px 20px;
             }
             
             h1 {
@@ -96,7 +162,15 @@
             }
             
             h2 {
-                font-size: 18px;
+                font-size: 20px;
+            }
+            
+            p, li {
+                font-size: 15px;
+            }
+            
+            .contact-box {
+                padding: 24px 20px;
             }
         }
     </style>
@@ -106,7 +180,9 @@
         <h1>简记账用户协议</h1>
         <p class="update-date">更新日期：2025年1月</p>
         
-        <p>欢迎使用简记账！在使用本应用之前，请您仔细阅读并充分理解本协议的全部内容。</p>
+        <div class="intro">
+            <p>欢迎使用简记账！在使用本应用之前，请您仔细阅读并充分理解本协议的全部内容。</p>
+        </div>
         
         <div class="highlight">
             <p><strong>重要提示：</strong>当您下载、安装、启动或使用简记账时，即表示您已充分阅读、理解并同意接受本协议的全部内容。如果您不同意本协议的任何内容，请立即停止使用本应用。</p>
@@ -184,16 +260,20 @@
             <li><strong>语言</strong>：本协议以中文为准</li>
         </ul>
         
-        <div class="contact">
-            <h2 style="margin-top: 0;">联系我们</h2>
-            <p>如果您对本用户协议有任何疑问、意见或建议，请通过以下方式联系我们：</p>
-            <p>📧 邮箱：<a href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a></p>
-            <p>我们会在收到您的反馈后尽快回复。</p>
+        <div class="contact-box">
+            <h2>联系我们</h2>
+            <p>如果您对本用户协议有任何疑问、意见或建议，请通过邮件联系我们：</p>
+            <a href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a>
+            <p style="margin-top: 16px; font-size: 14px; opacity: 0.9;">我们会在收到您的反馈后尽快回复</p>
         </div>
         
-        <p style="margin-top: 40px; text-align: center; color: #999; font-size: 14px;">
+        <p style="margin-top: 40px; text-align: center; color: #8e8e93; font-size: 14px;">
             感谢您选择简记账！
         </p>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 简记账 SimpleLedger</p>
     </div>
 </body>
 </html>

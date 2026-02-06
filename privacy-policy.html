@@ -12,10 +12,10 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
             line-height: 1.8;
             color: #1a1a1a;
-            background-color: #f5f5f7;
+            background: #f5f5f7;
             padding: 20px;
         }
         
@@ -23,9 +23,9 @@
             max-width: 800px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
+            padding: 48px;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
@@ -37,50 +37,137 @@
         
         .update-date {
             font-size: 14px;
-            color: #666;
+            color: #8e8e93;
             margin-bottom: 32px;
         }
         
+        .intro {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 32px;
+            border-left: 3px solid #007AFF;
+        }
+        
+        .intro p {
+            margin: 0;
+            color: #3a3a3c;
+            font-size: 15px;
+        }
+        
         h2 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 600;
             color: #1a1a1a;
-            margin-top: 32px;
+            margin-top: 40px;
             margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e5ea;
         }
         
         p {
             font-size: 16px;
-            color: #333;
+            color: #3a3a3c;
             margin-bottom: 16px;
+            line-height: 1.6;
         }
         
         ul, ol {
             margin-left: 24px;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
         
         li {
             font-size: 16px;
-            color: #333;
-            margin-bottom: 8px;
+            color: #3a3a3c;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        li strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: #fff9e6;
+            border-left: 3px solid #ffcc00;
+            padding: 16px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            color: #3a3a3c;
+        }
+        
+        .info-box {
+            background: #f0f9ff;
+            border-left: 3px solid #007AFF;
+            padding: 16px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        .info-box p {
+            margin: 0;
+            color: #3a3a3c;
         }
         
         .contact {
-            margin-top: 40px;
-            padding: 20px;
-            background: #f5f5f7;
-            border-radius: 8px;
+            margin-top: 48px;
+            padding: 32px;
+            background: #007AFF;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 16px;
+        }
+        
+        .contact p {
+            color: white;
+            margin-bottom: 12px;
         }
         
         .contact a {
-            color: #007AFF;
+            color: white;
             text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: background 0.2s ease;
+            margin-top: 8px;
+        }
+        
+        .contact a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 24px 20px;
+            color: #8e8e93;
+            font-size: 14px;
         }
         
         @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+            
             .container {
-                padding: 24px;
+                padding: 28px 20px;
             }
             
             h1 {
@@ -88,7 +175,15 @@
             }
             
             h2 {
-                font-size: 18px;
+                font-size: 20px;
+            }
+            
+            p, li {
+                font-size: 15px;
+            }
+            
+            .contact {
+                padding: 24px 20px;
             }
         }
     </style>
@@ -98,7 +193,9 @@
         <h1>简记账隐私政策</h1>
         <p class="update-date">更新日期：2025年1月</p>
         
-        <p>欢迎使用简记账！我们非常重视您的隐私保护和个人信息安全。本隐私政策将帮助您了解我们如何收集、使用、存储和保护您的个人信息。</p>
+        <div class="intro">
+            <p>欢迎使用简记账！我们非常重视您的隐私保护和个人信息安全。本隐私政策将帮助您了解我们如何收集、使用、存储和保护您的个人信息。</p>
+        </div>
         
         <h2>一、信息收集</h2>
         <p>简记账尊重并保护您的隐私。我们仅收集为提供服务所必需的信息：</p>
@@ -118,8 +215,12 @@
         </ol>
         
         <h2>三、信息存储</h2>
-        <p><strong>本地存储</strong>：您的所有记账数据完全存储在您的设备本地，我们不会将数据上传到任何第三方服务器。</p>
-        <p><strong>iCloud 备份</strong>：如果您选择启用 iCloud 同步功能，数据将按照 Apple 的隐私政策存储在您的 iCloud 账户中。我们无法访问您的 iCloud 数据。</p>
+        <div class="info-box">
+            <p><strong>💾 本地存储</strong>：您的所有记账数据完全存储在您的设备本地，我们不会将数据上传到任何第三方服务器。</p>
+        </div>
+        <div class="info-box">
+            <p><strong>☁️ iCloud 备份</strong>：如果您选择启用 iCloud 同步功能，数据将按照 Apple 的隐私政策存储在您的 iCloud 账户中。我们无法访问您的 iCloud 数据。</p>
+        </div>
         
         <h2>四、信息安全</h2>
         <p>我们采取以下措施保护您的数据安全：</p>
@@ -129,12 +230,9 @@
             <li>OCR 识别完全在本地进行，截图不会上传到服务器</li>
             <li>定期更新应用，修复安全漏洞</li>
         </ul>
-        <p>但请注意，没有任何互联网传输或电子存储方法是 100% 安全的。我们建议您：</p>
-        <ul>
-            <li>定期备份数据到 iCloud 或本地文件</li>
-            <li>妥善保管您的设备和密码</li>
-            <li>及时更新系统和应用版本</li>
-        </ul>
+        <div class="highlight-box">
+            <p><strong>⚠️ 安全提示</strong>：没有任何互联网传输或电子存储方法是 100% 安全的。我们建议您定期备份数据、妥善保管设备和密码、及时更新系统和应用版本。</p>
+        </div>
         
         <h2>五、第三方服务</h2>
         <p>简记账不使用任何第三方数据分析或广告服务。我们不会与任何第三方分享您的个人信息。</p>
@@ -155,11 +253,15 @@
         </ul>
         
         <div class="contact">
-            <h2 style="margin-top: 0;">联系我们</h2>
-            <p>如果您对本隐私政策有任何疑问、意见或建议，请通过以下方式联系我们：</p>
-            <p>📧 邮箱：<a href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a></p>
-            <p>我们会在收到您的反馈后尽快回复。</p>
+            <h2>联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问、意见或建议，请通过邮件联系我们：</p>
+            <a href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a>
+            <p style="margin-top: 16px; font-size: 14px; opacity: 0.9;">我们会在收到您的反馈后尽快回复</p>
         </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 简记账 SimpleLedger</p>
     </div>
 </body>
 </html>

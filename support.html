@@ -12,49 +12,73 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
             line-height: 1.8;
             color: #1a1a1a;
-            background-color: #f5f5f7;
+            background: #f5f5f7;
             padding: 20px;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
+            padding: 48px;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
             font-size: 28px;
             font-weight: 700;
             color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #8e8e93;
             margin-bottom: 32px;
         }
         
+        .intro {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 32px;
+            text-align: center;
+            border-left: 3px solid #007AFF;
+        }
+        
+        .intro p {
+            margin: 0;
+            color: #3a3a3c;
+            font-size: 15px;
+        }
+        
         h2 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 600;
             color: #1a1a1a;
-            margin-top: 32px;
-            margin-bottom: 16px;
+            margin-top: 40px;
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e5ea;
         }
         
         h3 {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 600;
-            color: #333;
-            margin-top: 24px;
+            color: #1a1a1a;
+            margin-top: 20px;
             margin-bottom: 12px;
         }
         
         p {
             font-size: 16px;
-            color: #333;
+            color: #3a3a3c;
             margin-bottom: 16px;
+            line-height: 1.6;
         }
         
         ul, ol {
@@ -64,8 +88,9 @@
         
         li {
             font-size: 16px;
-            color: #333;
+            color: #3a3a3c;
             margin-bottom: 8px;
+            line-height: 1.6;
         }
         
         .faq-item {
@@ -73,39 +98,22 @@
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 16px;
+            border-left: 3px solid #007AFF;
         }
         
         .faq-item h3 {
             margin-top: 0;
             color: #007AFF;
+            font-size: 16px;
+            margin-bottom: 10px;
         }
         
-        .contact-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 32px;
-            border-radius: 12px;
-            margin-top: 40px;
-            text-align: center;
+        .faq-item p {
+            margin-bottom: 8px;
         }
         
-        .contact-box h2 {
-            color: white;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
-        
-        .contact-box a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
-            display: inline-block;
+        .faq-item ol, .faq-item ul {
             margin-top: 8px;
-        }
-        
-        .contact-box a:hover {
-            text-decoration: underline;
         }
         
         .feature-grid {
@@ -124,11 +132,69 @@
         .feature-card h3 {
             margin-top: 0;
             font-size: 16px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        
+        .feature-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #3a3a3c;
+        }
+        
+        .contact-box {
+            background: #007AFF;
+            color: white;
+            padding: 36px;
+            border-radius: 12px;
+            margin-top: 48px;
+            text-align: center;
+        }
+        
+        .contact-box h2 {
+            color: white;
+            margin-top: 0;
+            border: none;
+            padding-bottom: 0;
+            margin-bottom: 16px;
+        }
+        
+        .contact-box p {
+            color: white;
+            margin-bottom: 12px;
+        }
+        
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            display: inline-block;
+            padding: 14px 32px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: background 0.2s ease;
+            margin-top: 12px;
+        }
+        
+        .contact-box a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 24px 20px;
+            color: #8e8e93;
+            font-size: 14px;
         }
         
         @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+            
             .container {
-                padding: 24px;
+                padding: 28px 20px;
             }
             
             h1 {
@@ -136,20 +202,27 @@
             }
             
             h2 {
-                font-size: 18px;
+                font-size: 20px;
             }
             
             .feature-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .contact-box {
+                padding: 28px 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📱 简记账技术支持</h1>
+        <h1>简记账技术支持</h1>
+        <p class="subtitle">我们致力于为您提供最好的使用体验</p>
         
-        <p>欢迎来到简记账技术支持页面！我们致力于为您提供最好的使用体验。如果您在使用过程中遇到任何问题，请先查看下方的常见问题解答。</p>
+        <div class="intro">
+            <p>如果您在使用过程中遇到任何问题，请先查看下方的常见问题解答</p>
+        </div>
         
         <h2>🔥 常见问题</h2>
         
@@ -263,22 +336,31 @@
         </ul>
         
         <h2>📚 更多资源</h2>
-        
-        <ul>
-            <li><a href="user-agreement.html">用户协议</a></li>
-            <li><a href="privacy-policy.html">隐私政策</a></li>
-        </ul>
-        
-        <div class="contact-box">
-            <h2>📧 联系我们</h2>
-            <p>如果以上内容无法解决您的问题，请通过邮件联系我们：</p>
-            <a href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a>
-            <p style="margin-top: 16px; font-size: 14px; opacity: 0.9;">我们会在 24-48 小时内回复您的邮件</p>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>用户协议</h3>
+                <p><a href="user-agreement.html" style="color: #007AFF; text-decoration: none;">查看用户协议 →</a></p>
+            </div>
+            <div class="feature-card">
+                <h3>隐私政策</h3>
+                <p><a href="privacy-policy.html" style="color: #007AFF; text-decoration: none;">查看隐私政策 →</a></p>
+            </div>
         </div>
         
-        <p style="margin-top: 40px; text-align: center; color: #999; font-size: 14px;">
+        <div class="contact-box">
+            <h2>联系我们</h2>
+            <p>如果以上内容无法解决您的问题，请通过邮件联系我们：</p>
+            <a href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a>
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.9;">我们会在 24-48 小时内回复您的邮件</p>
+        </div>
+        
+        <p style="margin-top: 40px; text-align: center; color: #8e8e93; font-size: 14px;">
             感谢您使用简记账！我们会持续改进，为您提供更好的服务。
         </p>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 简记账 SimpleLedger</p>
     </div>
 </body>
 </html>
