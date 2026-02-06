@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简记账 - 技术支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background-color: #f5f5f7;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 32px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        
+        li {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .faq-item {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .faq-item h3 {
+            margin-top: 0;
+            color: #007AFF;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 32px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .contact-box h2 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+        
+        .feature-card {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 24px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 简记账技术支持</h1>
+        
+        <p>欢迎来到简记账技术支持页面！我们致力于为您提供最好的使用体验。如果您在使用过程中遇到任何问题，请先查看下方的常见问题解答。</p>
+        
+        <h2>🔥 常见问题</h2>
+        
+        <div class="faq-item">
+            <h3>Q: 如何快速记账？</h3>
+            <p><strong>A:</strong> 有两种方式：</p>
+            <ol>
+                <li><strong>手动记账</strong>：点击底部的 + 按钮，输入金额、选择分类和账户，即可完成记账</li>
+                <li><strong>截图识别</strong>：截取微信或支付宝的支付截图，App 会自动识别金额和商家信息。开启截图监听后，截图会自动被识别</li>
+            </ol>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 如何备份数据？</h3>
+            <p><strong>A:</strong> 在「我的」→「备份与恢复」中，您可以：</p>
+            <ul>
+                <li><strong>iCloud 备份</strong>：自动同步到您的 iCloud 账户（推荐）</li>
+                <li><strong>本地备份</strong>：导出数据文件到本地存储</li>
+            </ul>
+            <p>建议定期备份以防数据丢失。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 数据安全吗？</h3>
+            <p><strong>A:</strong> 您的数据完全安全：</p>
+            <ul>
+                <li>所有数据存储在您的设备本地</li>
+                <li>我们不会上传或访问您的任何数据</li>
+                <li>如果使用 iCloud 备份，数据存储在您的 iCloud 账户中</li>
+                <li>OCR 识别完全在本地进行，截图不会上传</li>
+            </ul>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 如何设置预算？</h3>
+            <p><strong>A:</strong> 在「预算」页面：</p>
+            <ol>
+                <li>点击右上角的 + 按钮</li>
+                <li>选择预算类型（总预算或分类预算）</li>
+                <li>设置预算金额和周期</li>
+                <li>保存后即可在预算页面查看进度</li>
+            </ol>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 如何导出数据？</h3>
+            <p><strong>A:</strong> 在「我的」→「导出数据」中，您可以将交易记录导出为 CSV 文件，方便在电脑上用 Excel 或其他工具分析。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q: 截图识别不准确怎么办？</h3>
+            <p><strong>A:</strong> 截图识别功能会持续优化。如果识别不准确：</p>
+            <ul>
+                <li>确保截图清晰完整</li>
+                <li>支持微信和支付宝的支付截图</li>
+                <li>识别后可以手动修改金额和分类</li>
+            </ul>
+        </div>
+        
+        <h2>💡 使用技巧</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🏷️ 自动分类</h3>
+                <p>在「分类管理」中为分类设置关键词，记账时输入的备注如果包含关键词，系统会自动匹配对应分类。</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📊 统计报表</h3>
+                <p>在「账单」页面查看收支趋势图表，了解您的消费习惯和财务状况。</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>💰 多账户管理</h3>
+                <p>在「账户管理」中添加多个资金账户（如现金、银行卡、支付宝等），清晰管理每个账户的余额。</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🎯 预算提醒</h3>
+                <p>设置预算后，当支出接近或超过预算时，系统会自动提醒您控制消费。</p>
+            </div>
+        </div>
+        
+        <h2>🐛 问题反馈</h2>
+        
+        <p>如果您遇到以下情况，请及时反馈：</p>
+        <ul>
+            <li>应用崩溃或闪退</li>
+            <li>功能异常或无法使用</li>
+            <li>数据显示错误</li>
+            <li>界面显示问题</li>
+            <li>其他任何问题</li>
+        </ul>
+        
+        <p>反馈时请提供：</p>
+        <ol>
+            <li>问题的详细描述</li>
+            <li>复现步骤（如果可以重现）</li>
+            <li>设备型号和系统版本</li>
+            <li>截图（如果有）</li>
+        </ol>
+        
+        <h2>✨ 功能建议</h2>
+        
+        <p>我们非常欢迎您的功能建议！如果您有任何想法或需求，请告诉我们：</p>
+        <ul>
+            <li>希望增加的新功能</li>
+            <li>现有功能的改进建议</li>
+            <li>界面设计的优化建议</li>
+            <li>使用体验的反馈</li>
+        </ul>
+        
+        <h2>📚 更多资源</h2>
+        
+        <ul>
+            <li><a href="user-agreement.html">用户协议</a></li>
+            <li><a href="privacy-policy.html">隐私政策</a></li>
+        </ul>
+        
+        <div class="contact-box">
+            <h2>📧 联系我们</h2>
+            <p>如果以上内容无法解决您的问题，请通过邮件联系我们：</p>
+            <a href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a>
+            <p style="margin-top: 16px; font-size: 14px; opacity: 0.9;">我们会在 24-48 小时内回复您的邮件</p>
+        </div>
+        
+        <p style="margin-top: 40px; text-align: center; color: #999; font-size: 14px;">
+            感谢您使用简记账！我们会持续改进，为您提供更好的服务。
+        </p>
+    </div>
+</body>
+</html>
