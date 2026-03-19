@@ -3,277 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简记账 - 用户协议</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-            line-height: 1.8;
-            color: #1a1a1a;
-            background: #f5f5f7;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 48px;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1 {
-            font-size: 28px;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 8px;
-        }
-        
-        .update-date {
-            font-size: 14px;
-            color: #8e8e93;
-            margin-bottom: 32px;
-        }
-        
-        .intro {
-            background: #f5f5f7;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 24px;
-            border-left: 3px solid #007AFF;
-        }
-        
-        .intro p {
-            margin: 0;
-            color: #3a3a3c;
-            font-size: 15px;
-        }
-        
-        h2 {
-            font-size: 22px;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-top: 40px;
-            margin-bottom: 16px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #e5e5ea;
-        }
-        
-        p {
-            font-size: 16px;
-            color: #3a3a3c;
-            margin-bottom: 16px;
-            line-height: 1.6;
-        }
-        
-        ul, ol {
-            margin-left: 24px;
-            margin-bottom: 20px;
-        }
-        
-        li {
-            font-size: 16px;
-            color: #3a3a3c;
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-        
-        li strong {
-            color: #1a1a1a;
-            font-weight: 600;
-        }
-        
-        .highlight {
-            background: #fff9e6;
-            padding: 16px;
-            border-radius: 6px;
-            border-left: 3px solid #ffcc00;
-            margin: 20px 0;
-        }
-        
-        .highlight p {
-            margin: 0;
-            color: #3a3a3c;
-        }
-        
-        .contact-box {
-            background: #007AFF;
-            color: white;
-            padding: 32px;
-            border-radius: 12px;
-            margin-top: 48px;
-            text-align: center;
-        }
-        
-        .contact-box h2 {
-            color: white;
-            margin-top: 0;
-            border: none;
-            padding-bottom: 0;
-            margin-bottom: 16px;
-        }
-        
-        .contact-box p {
-            color: white;
-            margin-bottom: 12px;
-        }
-        
-        .contact-box a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
-            display: inline-block;
-            padding: 12px 24px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-            transition: background 0.2s ease;
-            margin-top: 8px;
-        }
-        
-        .contact-box a:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 24px 20px;
-            color: #8e8e93;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 16px;
-            }
-            
-            .container {
-                padding: 28px 20px;
-            }
-            
-            h1 {
-                font-size: 24px;
-            }
-            
-            h2 {
-                font-size: 20px;
-            }
-            
-            p, li {
-                font-size: 15px;
-            }
-            
-            .contact-box {
-                padding: 24px 20px;
-            }
-        }
-    </style>
+    <title>简记账 | 用户协议</title>
+    <meta name="description" content="简记账用户协议，说明服务条款、使用责任、免责声明与争议解决方式。">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>简记账用户协议</h1>
-        <p class="update-date">更新日期：2025年1月</p>
-        
-        <div class="intro">
-            <p>欢迎使用简记账！在使用本应用之前，请您仔细阅读并充分理解本协议的全部内容。</p>
+    <main class="site-shell">
+        <div class="topbar">
+            <a class="brand-mark" href="index.html"><span class="brand-dot"></span><span>简记账文档中心</span></a>
+            <a class="back-link" href="index.html">返回首页</a>
         </div>
-        
-        <div class="highlight">
-            <p><strong>重要提示：</strong>当您下载、安装、启动或使用简记账时，即表示您已充分阅读、理解并同意接受本协议的全部内容。如果您不同意本协议的任何内容，请立即停止使用本应用。</p>
-        </div>
-        
-        <h2>一、服务说明</h2>
-        <p>简记账是一款个人财务管理工具，旨在帮助用户记录和管理日常收支，提供以下核心功能：</p>
-        <ul>
-            <li><strong>记账功能</strong>：记录收入和支出交易</li>
-            <li><strong>分类管理</strong>：自定义收支分类和子分类</li>
-            <li><strong>账户管理</strong>：管理多个资金账户</li>
-            <li><strong>预算管理</strong>：设置和跟踪预算目标</li>
-            <li><strong>统计报表</strong>：查看收支趋势和分析</li>
-            <li><strong>截图识别</strong>：通过 OCR 技术快速记账</li>
-            <li><strong>数据备份</strong>：通过 iCloud 同步数据</li>
-        </ul>
-        
-        <h2>二、用户责任</h2>
-        <p>作为简记账的用户，您需要：</p>
-        <ol>
-            <li><strong>真实准确</strong>：确保输入的记账数据真实、准确</li>
-            <li><strong>妥善保管</strong>：妥善保管自己的设备和数据，防止数据丢失</li>
-            <li><strong>合法使用</strong>：不得将本应用用于任何非法目的或违反本协议的行为</li>
-            <li><strong>定期备份</strong>：建议定期备份数据，防止意外丢失</li>
-            <li><strong>及时更新</strong>：及时更新应用版本，获得最佳体验和安全保障</li>
-        </ol>
-        
-        <h2>三、知识产权</h2>
-        <p>简记账的所有内容，包括但不限于：</p>
-        <ul>
-            <li>应用程序代码和设计</li>
-            <li>界面设计和图标</li>
-            <li>文字、图片、音频、视频等素材</li>
-            <li>商标、标识和品牌元素</li>
-        </ul>
-        <p>均受中华人民共和国著作权法、商标法及其他知识产权法律法规的保护。未经我们书面许可，您不得：</p>
-        <ul>
-            <li>复制、修改、传播本应用的任何内容</li>
-            <li>对本应用进行反向工程、反编译或反汇编</li>
-            <li>删除或修改本应用中的版权声明</li>
-        </ul>
-        
-        <h2>四、免责声明</h2>
-        <p>在法律允许的最大范围内，我们对以下情况不承担责任：</p>
-        <ol>
-            <li><strong>数据丢失</strong>：因设备故障、系统升级、误操作等原因导致的数据丢失（建议定期备份）</li>
-            <li><strong>决策后果</strong>：您基于记账数据做出的任何财务决策及其后果</li>
-            <li><strong>第三方服务</strong>：Apple iCloud 等第三方服务的可用性和安全性</li>
-            <li><strong>不可抗力</strong>：因自然灾害、战争、政府行为等不可抗力导致的服务中断</li>
-            <li><strong>网络问题</strong>：因网络连接问题导致的功能异常</li>
-        </ol>
-        
-        <h2>五、服务变更与中断</h2>
-        <p>我们保留以下权利：</p>
-        <ul>
-            <li>随时修改、暂停或终止部分或全部服务</li>
-            <li>更新应用功能和界面设计</li>
-            <li>调整服务内容和收费政策（如有）</li>
-        </ul>
-        <p>重大变更时，我们会通过应用内通知的方式提前告知您。</p>
-        
-        <h2>六、隐私保护</h2>
-        <p>我们非常重视您的隐私保护。关于我们如何收集、使用、存储和保护您的个人信息，请参阅《<a href="privacy-policy.html">隐私政策</a>》。</p>
-        
-        <h2>七、协议修改</h2>
-        <p>我们保留随时修改本协议的权利。修改后的协议将在应用内公布，并在页面顶部标注更新日期。如果您继续使用本应用，即表示您接受修改后的协议。</p>
-        
-        <h2>八、争议解决</h2>
-        <p>本协议的订立、执行和解释及争议的解决均应适用中华人民共和国法律。如双方就本协议内容或其执行发生任何争议，双方应尽量友好协商解决；协商不成时，任何一方均可向被告所在地人民法院提起诉讼。</p>
-        
-        <h2>九、其他条款</h2>
-        <ul>
-            <li><strong>完整协议</strong>：本协议构成您与我们之间的完整协议</li>
-            <li><strong>可分割性</strong>：如本协议的任何条款被认定为无效，其他条款仍然有效</li>
-            <li><strong>语言</strong>：本协议以中文为准</li>
-        </ul>
-        
-        <div class="contact-box">
-            <h2>联系我们</h2>
-            <p>如果您对本用户协议有任何疑问、意见或建议，请通过邮件联系我们：</p>
-            <a href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a>
-            <p style="margin-top: 16px; font-size: 14px; opacity: 0.9;">我们会在收到您的反馈后尽快回复</p>
-        </div>
-        
-        <p style="margin-top: 40px; text-align: center; color: #8e8e93; font-size: 14px;">
-            感谢您选择简记账！
-        </p>
-    </div>
-    
-    <div class="footer">
-        <p>© 2025 简记账 SimpleLedger</p>
-    </div>
+
+        <article class="document-panel">
+            <header class="document-header">
+                <span class="hero-kicker">Terms of Use</span>
+                <h1>简记账用户协议</h1>
+                <p>本协议用于说明你下载、安装、登录、启用同步、备份、截图识别、家庭空间以及其他相关功能时适用的使用规则。</p>
+                <div class="document-meta">
+                    <span>更新日期：2026-03-19</span>
+                    <span>生效日期：2026-03-19</span>
+                    <span>适用产品：简记账 iOS App</span>
+                </div>
+            </header>
+
+            <div class="document-copy">
+                <section class="notice warning">
+                    <strong>重要提示</strong>
+                    <p>当你下载、安装、登录或继续使用简记账，即表示你已阅读并同意本协议及相关隐私政策。如果你不同意，请停止使用相关服务。</p>
+                </section>
+
+                <h2>一、服务内容</h2>
+                <p>简记账是一款用于个人与家庭财务记录、管理与查看的工具。根据产品当前提供的能力，服务可能包括：</p>
+                <ul>
+                    <li>交易记录、分类管理、账户管理、预算管理与报表展示。</li>
+                    <li>Apple 登录及会话保持。</li>
+                    <li>云端同步、云端备份、恢复和多设备数据衔接。</li>
+                    <li>家庭空间、共享账本或成员协作相关能力。</li>
+                    <li>截图识别辅助记账。</li>
+                    <li>问题反馈、技术支持及稳定性诊断。</li>
+                </ul>
+
+                <h2>二、你的使用责任</h2>
+                <p>你在使用简记账时，应当：</p>
+                <ol>
+                    <li>保证你提交的信息、反馈内容及账务记录尽量真实、准确、完整。</li>
+                    <li>妥善保管你的设备、Apple 账号及与本应用相关的登录状态。</li>
+                    <li>审慎使用同步、备份、恢复、成员邀请和共享等能力，避免因误操作造成数据覆盖、共享范围扩大或权限配置错误。</li>
+                    <li>遵守适用法律法规，不得利用本应用从事违法违规活动。</li>
+                    <li>在重要数据场景下，自行做好必要的备份与确认。</li>
+                </ol>
+
+                <h2>三、账号、登录与权限</h2>
+                <p>部分功能可能需要你登录后才能使用。你理解并同意：</p>
+                <ul>
+                    <li>Apple 登录、会话鉴权和后端服务是某些同步与协作能力的前提。</li>
+                    <li>不同账本、家庭空间或成员角色会对应不同的查看、编辑、邀请和管理权限。</li>
+                    <li>你应自行确认邀请对象、共享范围和权限设置是否符合你的预期。</li>
+                </ul>
+
+                <h2>四、数据、同步与备份</h2>
+                <p>简记账支持本地存储，也可能根据你启用的功能涉及云端同步、云端备份或恢复。你理解并同意：</p>
+                <ul>
+                    <li>在你开启相关功能后，部分数据会被传输到 Apple 服务或简记账后端服务，用于实现同步、恢复和协作。</li>
+                    <li>恢复、同步和多端并发场景下，数据可能因版本、权限或网络状态而产生延迟或覆盖风险。</li>
+                    <li>你应在执行删除、恢复、重装、切换账号、共享邀请等操作前，自行确认关键数据状态。</li>
+                </ul>
+
+                <h2>五、知识产权</h2>
+                <p>简记账应用本身及其中的界面设计、文案、图标、代码、服务标识等内容，受相关法律保护。未经开发者书面许可，你不得擅自复制、修改、传播、反向工程、反编译或将其用于与本产品无关的商业目的。</p>
+
+                <h2>六、免责声明</h2>
+                <p>在法律允许的范围内，以下情形导致的损失或影响，开发者将在合理范围内免责：</p>
+                <ol>
+                    <li>因设备故障、系统异常、网络波动、Apple 服务异常、第三方平台问题或不可抗力造成的服务中断、同步失败或数据异常。</li>
+                    <li>因你自身误操作、权限配置错误、账号切换、误删、误恢复、错误共享或未及时备份导致的问题。</li>
+                    <li>因你依据记账数据做出的投资、消费、借贷或其他财务决策所产生的后果。</li>
+                    <li>因现阶段产品能力、兼容性限制或测试覆盖边界导致的体验问题。</li>
+                </ol>
+
+                <h2>七、服务变更、中断与终止</h2>
+                <p>开发者有权根据产品运营、技术调整或法律要求，对服务内容进行新增、更新、限制、暂停或终止。若涉及重大调整，我们会尽量通过应用内提示或文档更新向你说明。</p>
+
+                <h2>八、隐私保护</h2>
+                <p>你使用本产品时的个人信息和数据处理规则，适用《<a href="privacy-policy.html">隐私政策</a>》。</p>
+
+                <h2>九、适用法律与争议解决</h2>
+                <p>本协议的订立、履行、解释与争议解决，适用中华人民共和国法律。若发生争议，双方应优先友好协商；协商不成的，可依法向有管辖权的人民法院提起诉讼。</p>
+
+                <h2>十、联系我们</h2>
+                <p>如果你对本协议有疑问、建议或异议，可以通过以下方式联系开发者：</p>
+
+                <div class="footer-card">
+                    <h3>开发者联系邮箱</h3>
+                    <p>如涉及使用问题、共享权限、同步异常、备份恢复或功能建议，请尽量描述清楚场景与复现步骤。</p>
+                    <a class="email-link" href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a>
+                </div>
+            </div>
+
+            <section class="link-cluster">
+                <strong>你可能还需要</strong>
+                <p>如果你想继续了解数据处理方式或问题反馈路径，可以查看以下页面。</p>
+                <div class="link-row">
+                    <a class="secondary-link" href="privacy-policy.html">查看隐私政策</a>
+                    <a class="secondary-link" href="support.html">查看技术支持</a>
+                    <a class="secondary-link" href="index.html">返回文档首页</a>
+                </div>
+            </section>
+        </article>
+
+        <div class="page-footer">© 2026 简记账 · 用户协议</div>
+    </main>
 </body>
 </html>
