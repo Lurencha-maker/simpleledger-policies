@@ -1,103 +1,53 @@
-# SimpleLedger GitHub Pages 部署指南
+# 简记账法律与支持中心
 
-本目录用于承载简记账的法律文档与技术支持页面，适合直接部署到 GitHub Pages。
+这里是简记账公开使用的法律文档与技术支持页面仓库。
 
-## 文件说明
+如果你是从 App 或 GitHub 进入这里，可以直接查看下面三个页面：
 
-- `index.html` - 法律与技术支持首页入口
-- `privacy-policy.html` - 隐私政策
-- `user-agreement.html` - 用户协议
-- `support.html` - 技术支持
-- `styles.css` - 站点共享样式
+## 页面入口
 
-## 推荐访问结构
+- [隐私政策](privacy-policy.html)
+- [用户协议](user-agreement.html)
+- [技术支持](support.html)
 
-部署完成后，建议把首页作为默认入口：
+## 关于简记账
 
-- `https://your-github-username.github.io/simpleledger-policies/`
+简记账是一款面向个人与家庭场景的记账应用，支持交易记录、分类管理、账户管理、预算查看，以及登录、同步、备份恢复和协作等相关能力。
 
-正文页面地址：
+本仓库主要用于公开展示以下内容：
 
-- `https://your-github-username.github.io/simpleledger-policies/privacy-policy.html`
-- `https://your-github-username.github.io/simpleledger-policies/user-agreement.html`
-- `https://your-github-username.github.io/simpleledger-policies/support.html`
+- 简记账隐私政策
+- 简记账用户协议
+- 简记账技术支持信息
 
-## 部署步骤
+## 使用说明
 
-### 1. 创建 GitHub 仓库
+- 如果你是通过手机打开本仓库，建议优先进入上面的页面入口查看对应内容。
+- 如果你是从 App 内打开网页，这些页面会以手机阅读为主进行展示。
+- 如果你遇到登录、同步、备份、恢复、共享或页面异常问题，可以直接查看技术支持页面。
 
-创建一个公开仓库，例如：`simpleledger-policies`
+## 联系方式
 
-### 2. 上传文件
+- 开发者邮箱：`lurencha_developer@163.com`
 
-```bash
-cd github-pages
-git init
-git add index.html privacy-policy.html user-agreement.html support.html styles.css README.md
-git commit -m "Add legal and support pages"
-git branch -M main
-git remote add origin https://github.com/your-github-username/simpleledger-policies.git
-git push -u origin main
-```
+也可以直接发送邮件：
 
-### 3. 启用 GitHub Pages
+- [发送邮件](mailto:lurencha_developer@163.com)
 
-1. 打开仓库 `Settings`
-2. 进入 `Pages`
-3. `Source` 选择 `Deploy from a branch`
-4. 选择 `main` 分支和根目录
-5. 保存后等待几分钟生效
+## 仓库说明
 
-## 与 App 的关系
-
-当前 App 已直接使用以下正文页地址：
-
-- `privacy-policy.html`
-- `user-agreement.html`
-
-因此部署时请保留这两个文件名不变，避免影响现有 WebView 加载逻辑。
-
-新增的 `index.html` 主要用于：
-
-- 对外公开访问时作为首页入口
-- 后续扩展更多文档页面时统一承载入口
-- 未来若 App 增加“法律与支持中心”入口时直接复用
-
-## 当前联系邮箱
-
-- `lurencha_developer@163.com`
-
-如需更换邮箱，请同步修改：
+本仓库包含以下静态页面文件：
 
 - `index.html`
 - `privacy-policy.html`
 - `user-agreement.html`
 - `support.html`
+- `styles.css`
 
-## 更新文档
+如果你正在通过 GitHub Pages 访问，首页通常为：
 
-修改页面后，重新提交并推送即可：
+- `index.html`
 
-```bash
-git add .
-git commit -m "Update legal and support pages"
-git push
-```
+## 说明
 
-## 发布前检查
-
-运行：
-
-```bash
-bash ../scripts/check-github-pages-legal-site.sh
-```
-
-建议再手工检查：
-
-- 首页可正常打开
-- 首页到三页的跳转正确
-- 三页都能返回首页
-- 三页之间互链正常
-- 手机端无横向滚动
-- `mailto:` 邮件链接可点击
-- App 内 WebView 能正常加载正文页
+页面内容会根据产品功能与政策更新持续调整，最新版本以当前仓库内容和已发布页面为准。
