@@ -61,12 +61,20 @@ body::before {
   padding: 12px 0 20px;
 }
 
+.topbar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
 .brand-mark,
 .back-link,
 .chip-link,
 .primary-link,
 .email-link,
-.card-link {
+.card-link,
+.nav-link {
   min-height: 44px;
 }
 
@@ -99,7 +107,8 @@ body::before {
 .primary-link,
 .email-link,
 .secondary-link,
-.card-link {
+.card-link,
+.nav-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +119,8 @@ body::before {
 
 .back-link,
 .chip-link,
-.secondary-link {
+.secondary-link,
+.nav-link {
   color: var(--text-secondary);
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.72);
@@ -122,6 +132,26 @@ body::before {
   padding: 10px 14px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-link {
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-link.is-active {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--brand) 0%, #4f95ff 100%);
+  box-shadow: 0 12px 24px rgba(31, 120, 255, 0.22);
 }
 
 .primary-link,
@@ -435,9 +465,21 @@ body::before {
   }
 
   .topbar {
-    flex-direction: column;
     align-items: stretch;
     padding-bottom: 16px;
+  }
+
+  .topbar-group {
+    gap: 12px;
+  }
+
+  .page-nav {
+    gap: 8px;
+  }
+
+  .nav-link {
+    flex: 1 1 calc(50% - 8px);
+    padding-inline: 12px;
   }
 
   .hero,
