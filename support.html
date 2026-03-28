@@ -3,21 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>收支小本 | 技术支持</title>
-    <meta name="description" content="收支小本技术支持页面，包含问题反馈方式、常见问题与法律文档入口。">
+    <title>收支小本 | 用户支持与帮助中心</title>
+    <meta name="description" content="收支小本用户支持与帮助中心页面，包含开始使用建议、常见问题、账号与同步说明，以及联系开发者的方式。">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main class="site-shell">
         <div class="topbar">
-            <a class="brand-mark" href="index.html"><span class="brand-dot"></span><span>收支小本文档中心</span></a>
+            <div class="topbar-group">
+                <a class="brand-mark" href="index.html"><span class="brand-dot"></span><span>收支小本文档中心</span></a>
+                <nav class="page-nav" aria-label="页面导航">
+                    <a class="nav-link" href="index.html">首页</a>
+                    <a class="nav-link" href="privacy-policy.html">隐私政策</a>
+                    <a class="nav-link" href="user-agreement.html">用户协议</a>
+                    <a class="nav-link is-active" href="support.html" aria-current="page">帮助中心</a>
+                </nav>
+            </div>
             <a class="back-link" href="index.html">返回首页</a>
         </div>
 
         <section class="hero">
-            <span class="hero-kicker">Support Center</span>
-            <h1>遇到问题时，先从这里开始。</h1>
-            <p>如果你在使用收支小本时遇到登录、同步、备份恢复、截图识别、共享权限或界面显示问题，可以先看这页。这里放的是最适合手机端快速查看的支持信息。</p>
+            <span class="hero-kicker">Help Center</span>
+            <h1>用户支持与帮助中心</h1>
+            <p>如果你在使用收支小本时遇到登录、同步、共享协作、恢复购买、账号处理、截图识别或界面显示问题，可以先看这页。这里放的是最适合手机端快速查看的帮助信息。</p>
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <strong>当前更新</strong>
+                    <span>2026-03-28</span>
+                </div>
+                <div class="meta-item">
+                    <strong>适用产品</strong>
+                    <span>收支小本 iOS App</span>
+                </div>
+                <div class="meta-item">
+                    <strong>支持邮箱</strong>
+                    <span>lurencha_developer@163.com</span>
+                </div>
+            </div>
             <div class="link-row">
                 <a class="primary-link" href="mailto:lurencha_developer@163.com">发送支持邮件</a>
                 <a class="chip-link" href="privacy-policy.html">查看隐私政策</a>
@@ -26,54 +48,87 @@
 
         <section class="document-panel">
             <div class="document-copy">
-                <h2>一、如何反馈问题</h2>
+                <section class="notice info">
+                    <strong>先看这 4 个入口</strong>
+                    <p>如果你是第一次使用，建议先区分“游客模式”和“登录模式”；如果你准备和他人一起记账，优先看家庭空间与共享账本；如果你已经购买会员，问题通常集中在恢复购买和会员状态同步；如果你想处理账号或数据问题，建议直接邮件联系开发者确认当前路径。</p>
+                </section>
+
+                <h2>一、开始使用前，先了解这几点</h2>
+                <ul>
+                    <li><strong>游客模式</strong>：可以直接进入 App 体验基础功能，但数据主要保存在本机。</li>
+                    <li><strong>登录模式</strong>：适合需要云同步、多设备衔接、家庭协作和会员状态同步的场景。</li>
+                    <li><strong>家庭空间</strong>：适合共同生活场景下的协作记账，支持成员、共享账本和权限管理。</li>
+                    <li><strong>恢复购买</strong>：适用于在符合 Apple 规则的前提下恢复已购会员权益。</li>
+                </ul>
+
+                <h2>二、如何反馈问题</h2>
                 <p>你可以直接发送邮件到开发者邮箱。为了更快定位问题，建议你在邮件中提供以下内容：</p>
                 <ul>
                     <li>问题出现时的操作步骤</li>
                     <li>问题发生的大致时间</li>
                     <li>设备型号和 iOS 版本</li>
                     <li>应用版本号</li>
-                    <li>是否使用了登录、云同步、备份恢复、家庭空间等功能</li>
+                    <li>是否使用了登录、云同步、恢复购买、家庭空间等功能</li>
                     <li>如方便，附上截图或录屏</li>
                 </ul>
 
                 <div class="footer-card">
                     <h3>开发者联系邮箱</h3>
-                    <p>问题反馈、建议、异常日志协助、功能建议，都可以发到这个邮箱。</p>
+                    <p>问题反馈、建议、异常日志协助、账号处理咨询、功能建议，都可以发到这个邮箱。我们会尽量在合理时间内查看并回复。</p>
                     <a class="email-link" href="mailto:lurencha_developer@163.com">lurencha_developer@163.com</a>
                 </div>
 
-                <h2>二、常见问题</h2>
+                <h2>三、常见问题</h2>
 
                 <div class="notice info">
-                    <strong>Q1：为什么我重装后需要重新登录或重新拉取数据？</strong>
-                    <p>重装应用后，本地数据库会重新建立。若你之前启用了登录、云同步或备份恢复，应用会根据当前账号和云端状态重新建立本地数据视图。这是为了确保账号与数据归属正确。</p>
+                    <strong>Q1：游客模式和登录模式有什么区别？</strong>
+                    <p>游客模式更适合先体验基础记账，数据主要保存在当前设备；登录模式更适合需要云同步、多设备衔接、家庭空间协作和会员状态同步的场景。</p>
                 </div>
 
                 <div class="notice info">
-                    <strong>Q2：为什么我下拉刷新后提示没有变化？</strong>
-                    <p>下拉刷新现在会先做轻量检查。如果云端没有变化，应用会直接提示本次刷新未发现更新，而不会重复全量拉取数据。这属于正常行为。</p>
+                    <strong>Q2：如何开始和另一个人一起记账？</strong>
+                    <p>建议先由一方登录并创建家庭空间，再通过邀请或当前版本支持的加入方式让另一方进入同一个协作空间。共同生活支出更适合放到共享账本中，个人账户权限则仍需按应用内授权关系单独确认。</p>
                 </div>
 
                 <div class="notice info">
-                    <strong>Q3：截图识别为什么没有自动工作？</strong>
-                    <p>请先确认你是否开启了截图识别相关功能和系统权限。若应用当前版本对该功能做了降级、暂停或条件限制，也可能导致不会自动触发。你可以通过邮件反馈具体机型和版本号，我们会继续排查。</p>
+                    <strong>Q3：为什么我重装后需要重新登录或重新拉取数据？</strong>
+                    <p>重装应用后，本地数据库会重新建立。若你之前启用了登录、云同步、协作或会员状态同步，应用会根据当前账号和云端状态重新建立本地数据视图。这是为了确保账号与数据归属正确。</p>
                 </div>
 
                 <div class="notice info">
-                    <strong>Q4：为什么家庭空间、共享账本或成员权限显示异常？</strong>
-                    <p>这类问题通常与成员关系、账本权限、同步时序或账号身份绑定有关。建议在反馈时附带相关页面截图、当前登录账号和问题出现前后的操作步骤。</p>
+                    <strong>Q4：恢复购买在哪里？为什么恢复后权益没有立刻出现？</strong>
+                    <p>恢复购买入口位于会员相关页面。恢复结果可能受到 Apple 交易状态、当前登录账号、网络状态和服务校验结果影响。如果恢复后权益没有立刻显示，建议稍后重试并确认当前 Apple 账号与登录账号是否一致。</p>
                 </div>
 
                 <div class="notice info">
-                    <strong>Q5：邮件里最好写什么？</strong>
+                    <strong>Q5：为什么我下拉刷新后提示没有变化？</strong>
+                    <p>下拉刷新会先做轻量检查。如果云端没有发现新的变更，应用会直接提示本次刷新未发现更新，而不会重复全量拉取数据。这通常属于正常行为。</p>
+                </div>
+
+                <div class="notice info">
+                    <strong>Q6：为什么家庭空间、共享账本或成员权限显示异常？</strong>
+                    <p>这类问题通常与成员关系、账本权限、同步时序或账号身份绑定有关。建议在反馈时附带相关页面截图、当前登录账号，以及问题出现前后的操作步骤。</p>
+                </div>
+
+                <div class="notice info">
+                    <strong>Q7：截图识别为什么没有正常工作？</strong>
+                    <p>请先确认你是否开启了截图识别相关功能和系统权限。若当前版本对该功能做了降级、暂停或条件限制，也可能导致不会触发。你可以通过邮件反馈具体机型和版本号，我们会继续排查。</p>
+                </div>
+
+                <div class="notice info">
+                    <strong>Q8：如果我想处理账号、注销路径或数据问题，应该怎么做？</strong>
+                    <p>建议优先进入 App 内与账号相关的页面查看当前入口。如果你对账号状态、注销路径、云端数据处理或支持记录有疑问，建议直接通过支持邮箱联系开发者确认当前适用路径。</p>
+                </div>
+
+                <div class="notice info">
+                    <strong>Q9：邮件里最好写什么？</strong>
                     <p>建议至少写清楚“做了什么、看到什么、预期是什么、问题何时发生”。如果你愿意提供截图或录屏，排查效率会明显更高。</p>
                 </div>
 
-                <h2>三、使用建议</h2>
+                <h2>四、使用建议</h2>
                 <ul>
                     <li>重要数据建议在执行删除、恢复、重装和账号切换前确认备份状态。</li>
-                    <li>如果你使用了云端同步，建议保持网络稳定后再观察最终结果。</li>
+                    <li>如果你使用了云端同步、恢复购买或家庭协作，建议保持网络稳定后再观察最终结果。</li>
                     <li>如果遇到异常，优先确认 App 是否已更新到最新版本。</li>
                     <li>如果问题涉及共享或成员权限，尽量同时记录相关成员端与所有者端的表现差异。</li>
                 </ul>
@@ -81,7 +136,7 @@
 
             <section class="link-cluster">
                 <strong>相关文档</strong>
-                <p>如果你的问题涉及条款或数据处理说明，可以继续查看下面这些页面。</p>
+                <p>如果你的问题涉及条款、数据处理或账号说明，可以继续查看下面这些页面。</p>
                 <div class="link-row">
                     <a class="secondary-link" href="privacy-policy.html">隐私政策</a>
                     <a class="secondary-link" href="user-agreement.html">用户协议</a>
@@ -90,7 +145,7 @@
             </section>
         </section>
 
-        <div class="page-footer">© 2026 收支小本 · 技术支持</div>
+        <div class="page-footer">© 2026 收支小本 · 用户支持与帮助中心</div>
     </main>
 </body>
 </html>
