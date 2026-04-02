@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收支小本 | 更新日志</title>
+    <meta name="description" content="收支小本更新日志网页，展示当前版本重点更新与完整版本记录，便于从 App 内或网页查看。">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <div class="topbar">
+            <div class="topbar-group">
+                <a class="brand-mark" href="index.html"><span class="brand-dot"></span><span>收支小本文档中心</span></a>
+                <nav class="page-nav" aria-label="页面导航">
+                    <a class="nav-link" href="index.html">首页</a>
+                    <a class="nav-link is-active" href="changelog.html" aria-current="page">更新日志</a>
+                    <a class="nav-link" href="privacy-policy.html">隐私政策</a>
+                    <a class="nav-link" href="user-agreement.html">用户协议</a>
+                    <a class="nav-link" href="support.html">用户支持</a>
+                </nav>
+            </div>
+            <a class="back-link" href="index.html">返回首页</a>
+        </div>
+
+        <section class="hero release-hero">
+            <span class="hero-kicker">Release Notes</span>
+            <h1>把这次更新最值得感知的变化，先讲清楚。</h1>
+            <p>这里会先给你一个适合快速浏览的版本摘要，再把每个版本的完整更新记录按顺序放在下面。无论你是从 App 内打开，还是想回看历史变化，都可以从这里快速找到重点。</p>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <strong>当前版本</strong>
+                    <span>1.1.0 (Build 25)</span>
+                </div>
+                <div class="meta-item">
+                    <strong>最近更新</strong>
+                    <span>2026-04-02</span>
+                </div>
+                <div class="meta-item">
+                    <strong>适用产品</strong>
+                    <span>收支小本 iOS App</span>
+                </div>
+            </div>
+
+            <div class="release-highlight-grid" aria-label="本次更新重点">
+                <article class="release-highlight-card">
+                    <span class="release-pill">01</span>
+                    <strong>自动记账更顺了</strong>
+                    <p>识别后可直接进入记账确认，不再绕路做无效确认。</p>
+                </article>
+                <article class="release-highlight-card">
+                    <span class="release-pill">02</span>
+                    <strong>账户选择更懂习惯</strong>
+                    <p>新增按分类记忆常用账户，添加记录时能更快带出合适账户。</p>
+                </article>
+                <article class="release-highlight-card">
+                    <span class="release-pill">03</span>
+                    <strong>分类管理更灵活</strong>
+                    <p>二级分类上限提升至 50 个，管理更从容。</p>
+                </article>
+                <article class="release-highlight-card">
+                    <span class="release-pill">04</span>
+                    <strong>保存反馈更明确</strong>
+                    <p>未满足保存条件时会给出更明确提示，不再像“点了没反应”。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="notice info">
+            <strong>怎么看更省时间</strong>
+            <p>如果你只想知道这次更新有什么变化，先看下面的“当前版本重点”；如果你想完整核对每一版具体新增了什么、优化了什么、修复了什么，再展开对应版本卡片即可。</p>
+        </section>
+
+        <section class="release-list" aria-label="完整版本记录">
+            <article class="release-card is-current">
+                <div class="release-card-header">
+                    <div>
+                        <span class="release-badge">当前版本</span>
+                        <h2>1.1.0 (Build 25)</h2>
+                        <p>自动记账功能版</p>
+                    </div>
+                    <span class="release-date">2026-04-02</span>
+                </div>
+
+                <div class="release-summary-grid">
+                    <div class="release-summary-item">
+                        <strong>自动记账</strong>
+                        <p>识别后可直接进入记账确认流程。</p>
+                    </div>
+                    <div class="release-summary-item">
+                        <strong>分类记忆账户</strong>
+                        <p>添加记录时可按分类优先带出常用账户。</p>
+                    </div>
+                    <div class="release-summary-item">
+                        <strong>分类管理</strong>
+                        <p>二级分类上限提升至 50 个。</p>
+                    </div>
+                    <div class="release-summary-item">
+                        <strong>保存反馈</strong>
+                        <p>未满足条件时给出更明确的保存提示。</p>
+                    </div>
+                </div>
+
+                <details class="release-details" open>
+                    <summary>查看完整内容</summary>
+                    <div class="release-detail-sections">
+                        <section class="release-detail-block">
+                            <h3>新增</h3>
+                            <ul>
+                                <li>支持自动记账识别与预填确认流程。</li>
+                                <li>支持从自动记账结果直接承接到添加记录页继续确认。</li>
+                                <li>支持按归属人和分类记忆常用账户，并在添加记录时优先命中最近账户。</li>
+                            </ul>
+                        </section>
+                        <section class="release-detail-block">
+                            <h3>优化</h3>
+                            <ul>
+                                <li>优化添加记录页的自动记账承接路径，减少无效确认步骤。</li>
+                                <li>优化添加记录页账户选择逻辑，分类切换后可优先带出最近使用账户。</li>
+                                <li>优化自动记账后的分类补全与保存提醒体验。</li>
+                                <li>优化未满足保存条件时的保存按钮反馈，点击后增加明确提示。</li>
+                                <li>优化关于页、个人页和反馈链路中的版本信息展示。</li>
+                            </ul>
+                        </section>
+                        <section class="release-detail-block">
+                            <h3>修复</h3>
+                            <ul>
+                                <li>修复自动记账分享导入链路中的图片数据缺失兼容问题。</li>
+                                <li>修复部分分类添加失败时提示不明确的问题。</li>
+                                <li>修复二级分类数量限制前后不一致的问题，并将上限提升至 50 个。</li>
+                                <li>修复自动记账场景下保存按钮缺少反馈，避免用户误以为点击无效。</li>
+                            </ul>
+                        </section>
+                        <section class="release-detail-block">
+                            <h3>已知问题</h3>
+                            <ul>
+                                <li>提审前仍需按最终上架包再次核对本条目，确保自动记账相关文案与实际上线能力一致。</li>
+                            </ul>
+                        </section>
+                    </div>
+                </details>
+            </article>
+
+            <article class="release-card">
+                <div class="release-card-header">
+                    <div>
+                        <span class="release-badge muted">历史版本</span>
+                        <h2>1.0.0</h2>
+                        <p>自动记账上线前的首发版本</p>
+                    </div>
+                    <span class="release-date">首发基线</span>
+                </div>
+
+                <div class="release-summary-grid">
+                    <div class="release-summary-item">
+                        <strong>共享账本</strong>
+                        <p>支持和重要的人一起管理共同开支。</p>
+                    </div>
+                    <div class="release-summary-item">
+                        <strong>云同步</strong>
+                        <p>登录后可换机继续使用。</p>
+                    </div>
+                    <div class="release-summary-item">
+                        <strong>多账本</strong>
+                        <p>按生活场景整理账务更方便。</p>
+                    </div>
+                    <div class="release-summary-item">
+                        <strong>预算与存钱计划</strong>
+                        <p>建立长期记账的基础体验。</p>
+                    </div>
+                </div>
+
+                <details class="release-details">
+                    <summary>查看完整内容</summary>
+                    <div class="release-detail-sections">
+                        <section class="release-detail-block">
+                            <h3>新增</h3>
+                            <ul>
+                                <li>支持共享账本与家庭空间协作记账。</li>
+                                <li>支持登录后云同步与换机恢复。</li>
+                                <li>支持多账本管理、预算与存钱计划。</li>
+                            </ul>
+                        </section>
+                        <section class="release-detail-block">
+                            <h3>优化</h3>
+                            <ul>
+                                <li>建立记账、账本、预算与家庭协作的基础体验。</li>
+                            </ul>
+                        </section>
+                        <section class="release-detail-block">
+                            <h3>修复</h3>
+                            <ul>
+                                <li>首发基线版本，此处不单独拆分修复项。</li>
+                            </ul>
+                        </section>
+                        <section class="release-detail-block">
+                            <h3>已知问题</h3>
+                            <ul>
+                                <li>自动记账能力尚未纳入 1.0 版本范围。</li>
+                            </ul>
+                        </section>
+                    </div>
+                </details>
+            </article>
+        </section>
+
+        <section class="footer-card">
+            <h2>先看这次更新重点，再决定要不要展开完整版本记录。</h2>
+            <p>如果你只是想知道当前版本更新了什么，看顶部摘要就够了；如果你需要核对历史版本或准备对外说明，再展开完整记录会更高效。</p>
+            <div class="link-row">
+                <a class="chip-link" href="index.html">返回首页</a>
+                <a class="email-link" href="mailto:lurencha_developer@163.com">发送邮件</a>
+            </div>
+        </section>
+
+        <div class="page-footer">© 2026 收支小本 · 更新日志</div>
+    </main>
+</body>
+</html>
