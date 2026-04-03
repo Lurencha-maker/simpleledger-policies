@@ -20,18 +20,20 @@
                     <a class="nav-link" href="support.html">用户支持</a>
                 </nav>
             </div>
-            <a class="back-link" href="index.html">返回首页</a>
+            <div class="topbar-actions">
+                <a class="back-link" href="index.html">返回首页</a>
+            </div>
         </div>
 
         <section class="hero release-hero">
             <span class="hero-kicker">Release Notes</span>
-            <h1>把这次更新最值得感知的变化，先讲清楚。</h1>
-            <p>这里会先给你一个适合快速浏览的版本摘要，再把每个版本的完整更新记录按顺序放在下面。无论你是从 App 内打开，还是想回看历史变化，都可以从这里快速找到重点。</p>
+            <h1>先看这次更新最值得感知的变化，再决定要不要展开历史版本。</h1>
+            <p>这里会先给你一个适合手机快速浏览的当前版本摘要，再把完整版本记录按顺序放在下面。无论你是从 App 内打开，还是想回看历史变化，都可以先抓住重点。</p>
 
             <div class="meta-grid">
                 <div class="meta-item">
                     <strong>当前版本</strong>
-                    <span>1.1.0 (Build 25)</span>
+                    <span>1.0-25</span>
                 </div>
                 <div class="meta-item">
                     <strong>最近更新</strong>
@@ -41,6 +43,11 @@
                     <strong>适用产品</strong>
                     <span>收支小本 iOS App</span>
                 </div>
+            </div>
+
+            <div class="hero-actions">
+                <a class="primary-link" href="#current-version">查看当前版本重点</a>
+                <a class="chip-link" href="#release-history">查看完整记录</a>
             </div>
 
             <div class="release-highlight-grid" aria-label="本次更新重点">
@@ -72,12 +79,12 @@
             <p>如果你只想知道这次更新有什么变化，先看下面的“当前版本重点”；如果你想完整核对每一版具体新增了什么、优化了什么、修复了什么，再展开对应版本卡片即可。</p>
         </section>
 
-        <section class="release-list" aria-label="完整版本记录">
-            <article class="release-card is-current">
+        <section class="release-list" id="release-history" aria-label="完整版本记录">
+            <article class="release-card is-current" id="current-version">
                 <div class="release-card-header">
                     <div>
                         <span class="release-badge">当前版本</span>
-                        <h2>1.1.0 (Build 25)</h2>
+                        <h2>1.0-25</h2>
                         <p>自动记账功能版</p>
                     </div>
                     <span class="release-date">2026-04-02</span>
@@ -206,8 +213,8 @@
         </section>
 
         <section class="footer-card">
-            <h2>先看这次更新重点，再决定要不要展开完整版本记录。</h2>
-            <p>如果你只是想知道当前版本更新了什么，看顶部摘要就够了；如果你需要核对历史版本或准备对外说明，再展开完整记录会更高效。</p>
+            <h2>当前版本看重点，历史版本看细节。</h2>
+            <p>如果你只是想确认这次更新改了什么，看顶部摘要和当前版本卡就够了；如果你还需要对照历史变化，再展开完整记录会更高效。</p>
             <div class="link-row">
                 <a class="chip-link" href="index.html">返回首页</a>
                 <a class="email-link" href="mailto:lurencha_developer@163.com">发送邮件</a>
